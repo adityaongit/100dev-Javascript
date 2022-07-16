@@ -30,7 +30,24 @@ function lowHigh(n1, n2, n3) {
 lowHigh(10, 30, 70);
 
 // *Conditionals*
-//Create a function that returns heads or tails randomly and as fairly as possible. Call the function.
+//q5 Create a function that returns heads or tails randomly and as fairly as possible. Call the function.
+
+function headTail() {
+  let res = Math.random();
+  if (res < 0.5) {
+    console.log('HEAD');
+  } else {
+    console.log('TAIL');
+  }
+}
+headTail();
 
 //*Loops*
-//Create a function that takes in a number. Console log the result of heads or tails using the previous function x times where x is the number passed into the function. Call the function.
+//q6 Create a function that takes in a number. Console log the result of heads or tails using the previous function x times where x is the number passed into the function. Call the function.
+function loop(n) {
+  for (let i = 0; i < n; i++) {
+    headTail();
+  }
+}
+
+loop(5);
