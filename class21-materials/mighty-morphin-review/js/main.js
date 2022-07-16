@@ -1,19 +1,33 @@
 // *Variables*
-// Declare a variable, reassign it to your fav holiday, make sure it is in all caps, and print the value to the console
+// q1 Declare a variable, reassign it to your fav holiday, make sure it is in all caps, and print the value to the console
+
 var a = 'diwali';
 a = a.toUpperCase();
 console.log(a);
-//Declare a variable, assign it a string, alert the last three characters in the string (Use your google-fu and the MDN)
+
+// q2 Declare a variable, assign it a string, alert the last three characters in the string (Use your google-fu and the MDN)
 let b = 'aditya';
-alert(b.slice(-3));
+// alert(b.slice(-3));
+
 // *Functions*
-// Create a function that takes in 5 numbers. Subtract all five from 100. Alert the absolute value of the difference. Call the function.
+// q3 Create a function that takes in 5 numbers. Subtract all five from 100. Alert the absolute value of the difference. Call the function.
+
 function sub100(n1, n2, n3, n4, n5) {
   return Math.abs(100 - (n1 + n2 + n3 + n4 + n5));
 }
 var res = sub100(5, 10, 15, 20, 25);
 console.log(res);
-// Create a function that takes in 3 numbers. Console log lowest and highest values. Call the function.
+
+// q4 Create a function that takes in 3 numbers. Console log lowest and highest values. Call the function.
+
+function lowHigh(n1, n2, n3) {
+  maxNum = Math.max(n1, n2, n3);
+  minNum = Math.min(n1, n2, n3);
+
+  console.log(maxNum);
+  console.log(minNum);
+}
+lowHigh(10, 30, 70);
 
 // *Conditionals*
 //Create a function that returns heads or tails randomly and as fairly as possible. Call the function.
